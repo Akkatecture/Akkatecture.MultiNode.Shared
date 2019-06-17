@@ -4,6 +4,23 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+        <Title>Akkatecture</Title>
+        <Authors>Lutando Ngqakaza</Authors>
+        <Company>Lutando Ngqakaza</Company>
+        <Copyright>Copyright (c) Lutando Ngqakaza 2018 - 2019</Copyright>
+        <Description>
+            Wrapper for akka.net multinode test runner shared libraries
+        </Description>
+        <PackageTags>akka cqrs es eventsourcing actors microservices actor-model clustering testing tdd</PackageTags>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/Akkatecture/Akkatecture.MultiNode.Shared</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <NeutralLanguage>en-GB</NeutralLanguage>
+        <PackageReleaseNotes>Externally Updated</PackageReleaseNotes>
+        <PackageIconUrl>https://akkatecture.net/logos/logo-512.png</PackageIconUrl>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>

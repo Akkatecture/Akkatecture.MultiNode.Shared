@@ -1,0 +1,44 @@
+# Akkatecture Release CI CD pipeline definition
+# This definition is responsible for building and testing
+# the project in the master branch. It pushes package
+# artefacts to a public nuget feed as production packages.
+
+trigger: none
+
+pr: none
+
+variables:
+  majorVersion: '0'
+  minorVersion: '1'
+  patchVersion: '0'
+
+name: ${{ format('{0}.{1}.{2}', variables.majorVersion, variables.minorVersion, variables.patchVersion) }}
+
+jobs:
+  - job: Build
+    pool:
+      vmImage: 'Ubuntu 16.04'
+    variables:
+      buildConfiguration: 'Release'
+
+    steps:
+    - task: DotNetCoreCLI@2
+      displayName: 'Restore [Akkatecture]'
+      inputs:
+        command: 'restore'
+        projects: 'Akkatecture.sln'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Build [Akkatecture]'
+      inputs:
+        command: 'build'
+        projects: 'Akkatecture.sln'
+        arguments: '/p:Version=$(Build.BuildNumber) --configuration $(BuildConfiguration)'
+
+    - task: NuGetCommand@2
+      displayName: 'Push [Akkatecture.MultiNode.Shared]'
+      inputs:
+        command: push
+        packagesToPush: 'src/Akkatecture.MultiNode.Shared/bin/$(BuildConfiguration)/*.nupkg'
+        nuGetFeedType: external
+        publishFeedCredentials: 'Akkatecture-NuGet'
