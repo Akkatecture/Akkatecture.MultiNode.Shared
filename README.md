@@ -1,0 +1,1 @@
+This project exists because of https://github.com/akkadotnet/akka.net/issues/3824
