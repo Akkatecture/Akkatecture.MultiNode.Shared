@@ -32,7 +32,7 @@ jobs:
       displayName: 'Build [Akkatecture]'
       inputs:
         command: 'build'
-        projects: 'Akkatecture.sln'
+        projects: 'Akkatecture.MultiNode.Shared.sln'
         arguments: '/p:Version=$(Build.BuildNumber) --configuration $(BuildConfiguration)'
 
     - task: NuGetCommand@2
