@@ -269,3 +269,15 @@ __pycache__/
 
 # Multinode Test Runner outputs
 *_netcore.txt
+
+# Ionide
+.ionide/
+
+# Opencover
+*opencover.xml
+
+# Opencover
+*.sonarqube/*
+
+# tools
+*/tools
