@@ -4,6 +4,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F51610B-3D4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akkatecture.MultiNode.Shared", "src\Akkatecture.MultiNode.Shared\Akkatecture.MultiNode.Shared.csproj", "{9484724B-C31C-4016-AC34-D61F49C7C664}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{03448D65-5E0B-4CB9-B539-A150279B0F18}"
+ProjectSection(SolutionItems) = preProject
+	build\azure-pipelines-release-ci-cd.yaml = build\azure-pipelines-release-ci-cd.yaml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -31,10 +31,6 @@ using Akka.MultiNodeTestRunner.Shared.Reporting;
 
 namespace Akka.MultiNodeTestRunner.Shared.Sinks
 {
-    /// <summary>
-    /// A <see cref="MessageSinkActor"/> implementation that is capable of using a <see cref="TestRunCoordinator"/> for 
-    /// test run summaries and other purposes.
-    /// </summary>
     public abstract class TestCoordinatorEnabledMessageSink : MessageSinkActor
     {
         protected IActorRef TestCoordinatorActorRef;
