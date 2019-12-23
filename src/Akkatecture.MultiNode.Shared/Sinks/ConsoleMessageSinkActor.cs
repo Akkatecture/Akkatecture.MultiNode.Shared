@@ -28,7 +28,6 @@ using System;
 using System.Linq;
 using Akka.Actor;
 using Akka.Event;
-using Akka.MultiNodeTestRunner.Shared.Extensions;
 using Akka.MultiNodeTestRunner.Shared.Reporting;
 
 namespace Akka.MultiNodeTestRunner.Shared.Sinks

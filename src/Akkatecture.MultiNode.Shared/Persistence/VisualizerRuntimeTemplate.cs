@@ -35,9 +35,6 @@
 // </auto-generated>
 // ------------------------------------------------------------------------------
 
-
-using Akka.MultiNodeTestRunner.Shared.Extensions;
-
 namespace Akka.MultiNodeTestRunner.Shared.Persistence
 {
     using System.Linq;
