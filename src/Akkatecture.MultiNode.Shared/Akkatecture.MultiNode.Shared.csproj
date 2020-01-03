@@ -9,7 +9,7 @@
         <Title>Akkatecture</Title>
         <Authors>Lutando Ngqakaza</Authors>
         <Company>Lutando Ngqakaza</Company>
-        <Copyright>Copyright (c) Lutando Ngqakaza 2018 - 2019</Copyright>
+        <Copyright>Copyright (c) Lutando Ngqakaza 2018 - 2020</Copyright>
         <Description>
             Wrapper for akka.net multinode test runner shared libraries
         </Description>
